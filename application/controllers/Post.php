@@ -60,10 +60,4 @@ class Post extends CI_Controller {
 		redirect('post');
 	}
 
-	public function delete($id)
-	{
-		$this->crud->delete('posts', $id);
-		$this->session->set_flashdata('message', '<div class="alert alert-success">Record has been deleted successfully.</div>');
-		redirect('post');
-	}
 }
